@@ -2,7 +2,8 @@
 
 ### Description 
 
-Node.js Challenge: Professional README Generator
+Node.js Challenge: Professional README Generator:
+
 Generate a professional README.md file in your command line application on your local computer using the npm Inquirer package. 
 
 ### Installation 
