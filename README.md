@@ -18,11 +18,9 @@ npm install to use this file.
 
 ### Screenshots 
 
-![Alt text](../../../../OneDrive/Downloads/userq.png) 
+![Alt text](IMG/liceq.png)
 
-![Alt text](../../../../OneDrive/Downloads/liceq.png)
-
-
+![Alt text](IMG/userq.png)
 
 ### links
 
