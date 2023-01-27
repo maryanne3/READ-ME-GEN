@@ -2,6 +2,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
+const license = ["None", "MIT", "GPL 3.0", "Apache", "BSD", "GPL 2.0"];
 
 
 // TODO: Create an array of questions for user input
@@ -46,7 +47,7 @@ const userQuestions = [
           type: "list",
           name: "license",
           message: "Choose a license type:",
-          choices: ["MIT", "GPL 3.0", "Apache", "BSD", "GPL 2.0"],
+          choices: license
         },
         {
           type: "input",
