@@ -59,20 +59,22 @@ const userQuestions = [
 
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.appendFile(`${fileName}.md`, data, 
-    (err) => err ? console.error(err) : console.log(`${fileName}.md has been generated.`))
+function writeToFile(filename, data) {
+  const filename = ".utils/generate.md";
+
+  fs.writeFile(filename, data, function (err) {
+      err ? console.log(err) : console.log(filename + " README.md has been created!")
+  });
+    
 }
 
 // TODO: Create a function to initialize app
  async function init() {
-    let answers = await userInput();
+    let answers = await userQuestions();
     writeToFile((answers.fileName),(generateMarkdown(answers)));
 
 }
 
 // Function call to initialize app
-function userInput(){
-    return inquirer.prompt(userQuestions)
-}
+
 init();

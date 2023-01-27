@@ -84,10 +84,10 @@ ${data.description}
 
 ## Repository
 - [Project Repo](${data.repo})
+
 ## GitHub
-- ${githubInfo.name}
 - [GitHub Profile](${githubInfo.profile})
-- <${githubInfo.email}>
+
 `;
 }
 
